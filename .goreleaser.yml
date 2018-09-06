@@ -1,0 +1,15 @@
+builds:
+  - main : .
+    binary: reflex
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+    env:
+      - CGO_ENABLED=0
+
+archive:
+  files:
+    - README.md
+    - LICENSE.txt
